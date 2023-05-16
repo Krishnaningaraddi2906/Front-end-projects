@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./MusicPlayer.css">
+    <title>MusicPlayer</title>
+</head>
+<body>
+    <nav>
+        <ul>
+            <li id="logo"><img src="./images/logo.png" alt="" id="logo">Spotify</li>
+            <li>Home</li>
+            <li>Premium</li>
+            <li>About</li>
+            <li>Trending</li>
+            <li>Playlist</li>
+            <li><button id="profile">Profile</button></li>
+            <li><button id="Logout">Logout</button></li>
+
+        </ul>
+    </nav>
+
+    <div class="container">
+        
+        <div class="songlist">
+            <h2>Best of Arjith Singh</h2>
+            <div>
+                <div class="songItem">
+                <img src="./Song banners/samanteri.jpg" alt="" class="chalve">
+                <span>Tera chera</span>
+                <span class="timestamp">04:34 <i class="fa-sharp songItemPlay fa-solid fa-circle-play" id="play1"></i></span>
+                </div>
+                
+                <div class="songItem">
+                    <img src="./Song banners/kabhijo.jpg" alt="" class="chalve">
+                    <span>Kabhi jo badal</span>
+                    <span class="timestamp">04:15 <i class="fa-sharp songItemPlay fa-solid fa-circle-play" id="play2"></i></span>
+                </div>
+
+                <div class="songItem">
+                    <img src="./Song banners/channamereya.jpg" alt="" class="chalve">
+                    <span>channa mereya</span>
+                   <span class="timestamp">04:49 <i class="fa-sharp songItemPlay fa-solid fa-circle-play" id="play3"></i></span>
+                </div>
+
+                <div class="songItem">
+                    <img src="./Song banners/kamoshiyan.jpg" alt="" class="chalve">
+                    <span>Kamoshiyan</span>
+                    <span class="timestamp">05:34<i class="fa-sharp songItemPlay fa-solid fa-circle-play" id="play4"></i></span>
+                </div>
+
+                <div class="songItem">
+                    <img src="./Song banners/thodijagah.jpg" alt="" class="chalve">
+                    <span> Thodi jagah</span>
+                    <span class="timestamp">03:33 <i class="fa-sharp songItemPlay fa-solid fa-circle-play" id="play5"></i>
+                </div>
+
+                <div class="songItem">
+                    <img src="./Song banners/bandeya.jpg" alt="" class="chalve">
+                    <span>Bandeya re Bandeya</span>
+                    <span class="timestamp">04:15 <i class="fa-sharp songItemPlay fa-solid fa-circle-play" id="play6"></i></span>
+                </div>
+
+                <div class="songItem">
+                    <img src="./Song banners/chalvethu.jpg" alt="" class="chalve">
+                    <span>chal ve thu bandeya</span>
+                    <span class="timestamp">03:03 <i class="fa-sharp songItemPlay fa-solid fa-circle-play" id="play7"></i></span>
+                </div>
+                
+            </div>
+        </div>
+        <div class="banner">
+
+        </div>
+
+    </div>
+
+    <div class="bottom">
+            <input type="range" id="progressBar" min="0" max="100" value="0">
+        <div class="player">
+            <div class="songInfo">
+                <img src="./images/javascript-equalizer.gif" alt="" id="gif" width="100px" height="30px">
+            </div>
+            <marquee behavior="" direction="" id="songName" loop scrollamount="4"></marquee>
+            <div class="icons">
+                <!-- font-Awesome-icon-->
+                <i class="fa-sharp fa-2x fa-solid fa-backward-step" id="previous"></i>
+                <i class="fa-sharp fa-2x fa-solid fa-circle-play" id="masterPlay"></i>
+                <i class="fa-sharp fa-2x fa-solid fa-forward-step" id="next"></i>
+               
+            </div>
+            
+        </div>
+           
+    </div>
+   
+    <script src="./MusicPlayer.js"></script>
+    <script src="https://kit.fontawesome.com/ba2ab25e5d.js" crossorigin="anonymous"></script>
+</body>
+</html>
